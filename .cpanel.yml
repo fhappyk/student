@@ -1,0 +1,6 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home3/dwsolut1/student-directory.dwsolutionline.com/
+    - /bin/cp -rf * $DEPLOYPATH
+    - find $DEPLOYPATH -type f -exec chmod 644 {} \;
+    - find $DEPLOYPATH -type d -exec chmod 755 {} \;
